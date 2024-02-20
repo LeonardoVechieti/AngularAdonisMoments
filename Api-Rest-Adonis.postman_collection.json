@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "80f8e416-bf39-4afb-b1ae-faba068b21a2",
+		"name": "Api-Rest-Adonis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24401231"
+	},
+	"item": [
+		{
+			"name": "Moments",
+			"item": [
+				{
+					"name": "InserMoments",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Algum titulo",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Alguma descricao",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Leonardo/Pictures/Screenshots/Captura de tela 2024-02-07 101027.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}moments",
+							"host": [
+								"{{URL}}moments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateMoments",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Algum titulo atualizado",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Alguma descricao",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Leonardo/Pictures/Screenshots/Captura de tela 2024-02-07 101027.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}moments/3",
+							"host": [
+								"{{URL}}moments"
+							],
+							"path": [
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMoments",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetMoments",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GetMomentsId",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rota Teste",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "http://127.0.0.1:3333/api/",
+			"type": "string"
+		}
+	]
+}
