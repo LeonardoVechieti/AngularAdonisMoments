@@ -107,6 +107,38 @@
 			]
 		},
 		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Leonardo\",\r\n    \"text\": \"Algum comentário\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}moments/3/comments",
+							"host": [
+								"{{URL}}moments"
+							],
+							"path": [
+								"3",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "Rota Teste",
 			"request": {
 				"method": "GET",
